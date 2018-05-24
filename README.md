@@ -3,4 +3,4 @@
 Sample Form, with custom radio buttons, checkboxes and validation.
 
 <!-- Images -->
-![Example](screenshot.png)
+![Example](form.png)
