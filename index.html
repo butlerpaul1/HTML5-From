@@ -7,7 +7,7 @@
   <body>
     <header>
     </header>
-    <form>
+    <form name="myForm" onsubmit="return Form()">
       <!-- Gender -->
       <p>Please select your gender:</p>
       <input type="radio" id="male" name="gender" />
@@ -17,27 +17,30 @@
 
       <!-- Interests -->
       <p>You are interested coding in...</p>
-      <input type="checkbox" id="web" />
+      <input type="checkbox" id="web" class="messageCheckbox"  />
       <label for="web">Web development</label><br/>
-      <input type="checkbox" id="photoshop" />
+      <input type="checkbox" id="photoshop" class="messageCheckbox"  />
       <label for="photoshop">Photoshop</label><br/>
-      <input type="checkbox" id="java" />
+      <input type="checkbox" id="java" class="messageCheckbox"  />
       <label for="java">Java</label>
 
       <!-- Contact details -->
       <fieldset>
         <legend>Contact Info</legend>
-        <input type="email" placeholder="Email" required />
+        <input name="email" type="email" placeholder="Email" required />
         <span class="tick"></span>
-        <input type="telephone" placeholder="Phone number" required />
+        <input name="telephone" type= "telephone" 
+               placeholder="Phone number" required />
         <span class="tick"></span>
       </fieldset>
+      
       <!-- Preferred -->
       <p>How would you like to be contacted?</p>
-      <select>
+      <select id="mySelect">
         <option>By email</option>
         <option>By telephone</option>
       </select>
+      
       <input type="submit" value="Register" />
     </form>
   </body>
